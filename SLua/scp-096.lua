@@ -5,7 +5,7 @@ local LocalPlayer,R = game.Players.LocalPlayer,game:GetService("RunService")
 local Character,S,RS,HB = LocalPlayer.Character,R.Stepped,R.RenderStepped,R.Heartbeat
 local function w()repeat wait()until LocalPlayer and Character and Character.Humanoid.Health~=0 and Character.InternationalFedora and Character["International Fedora"] end w()
 if game.PlaceId == 155615604 and set.PrisonLife.AutoCriminal then
-    if firetouchinterest then firetouchinterest(workspace["Criminals Spawn"].SpawnLocation,Character.Head)else print("Set AutoCriminal to false, because your exploit is not supporting firetouchinterest()!")end
+    if firetouchinterest then firetouchinterest(workspace["Criminals Spawn"].SpawnLocation,Character.Head,0)else print("Set AutoCriminal to false, because your exploit is not supporting firetouchinterest()!")end
 end
 w()
 Character.InternationalFedora.Name = "RIGHT-HAND"

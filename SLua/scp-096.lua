@@ -3,12 +3,9 @@ local a,set = ({...})[1]
 if a then set=a else set={PrisonLife={AutoCriminal=true}}end
 local LocalPlayer,R = game.Players.LocalPlayer,game:GetService("RunService")
 local Character,S,RS,HB = LocalPlayer.Character,R.Stepped,R.RenderStepped,R.Heartbeat
-local function w()repeat wait()until LocalPlayer and Character and Character.InternationalFedora and Character["International Fedora"]and Character.Humanoid.Health~=0 end w()
-if game.PlaceId == 155615604 then
-    if set.PrisonLife.AutoCriminal and LocalPlayer.Team=="Inmates" then
-        Character.HumanoidRootPart.CFrame = CFrame.new(-974.6322021484375, 107.93020629882812, 2070.466796875)
-        Character.Humanoid.Health = 0
-    end
+local function w()repeat wait()until LocalPlayer and Character and Character.Humanoid.Health~=0 and Character.InternationalFedora and Character["International Fedora"] end w()
+if game.PlaceId == 155615604 and set.PrisonLife.AutoCriminal then
+    if firetouchinterest then firetouchinterest(workspace["Criminals Spawn"].SpawnLocation,Character.Head)else print("Set AutoCriminal to false, because your exploit is not supporting firetouchinterest()!")end
 end
 w()
 Character.InternationalFedora.Name = "RIGHT-HAND"

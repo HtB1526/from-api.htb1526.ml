@@ -8,6 +8,7 @@ if game.PlaceId == 155615604 and set.PrisonLife.AutoCriminal then
     if firetouchinterest then firetouchinterest(workspace["Criminals Spawn"].SpawnLocation,Character.Head,0)else print("Set AutoCriminal to false, because your exploit is not supporting firetouchinterest()!")end
 end
 w()
+for _, v in pairs(workspace:GetChildren())do if v.Name=="non"then v:Destroy()end end
 Character.InternationalFedora.Name = "RIGHT-HAND"
 Character.InternationalFedora.Name = "RIGHT-LEG"
 Character["International Fedora"].Name = "LEFT-HAND"
